@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <h1>Review creation</h1>
+      <p>You're about to create a review for cocktail <strong><%= @cocktail.name %></strong></p>
+
+      <%= simple_form_for [@cocktail, @review] do |f| %>
+        <%= f.input :content %>
+        <%= f.submit 'Save', class: 'btn btn-primary' %>
+      <% end %>
+    </div>
+  </div>
+</div>
