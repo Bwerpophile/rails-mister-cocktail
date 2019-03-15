@@ -18,6 +18,11 @@ gem 'webpacker'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
+#ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFJUXq+WeAI3W4FHy6a85cxVtkWu0KgPG88J8AfBsk1c lespagnol.joris@gmail.com
+# CLEVER_TOKEN=57b769446f8f48ff8d76bc4b7f284213
+# CLEVER_SECRET=d28bd1c4b6c24a05b0794e97b38504f1
+
+
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
@@ -28,7 +33,7 @@ gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.5'
+#em 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
