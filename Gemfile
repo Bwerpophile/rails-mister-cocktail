@@ -22,7 +22,9 @@ gem 'webpacker'
 # CLEVER_TOKEN=57b769446f8f48ff8d76bc4b7f284213
 # CLEVER_SECRET=d28bd1c4b6c24a05b0794e97b38504f1
 
-
+gem 'dotenv-rails', groups: [:development, :test]
+gem 'carrierwave', '~> 1.2'
+gem 'cloudinary', '~> 1.9.1'
 
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
