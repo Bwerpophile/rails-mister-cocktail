@@ -23,6 +23,7 @@ gem 'webpacker'
 # CLEVER_SECRET=d28bd1c4b6c24a05b0794e97b38504f1
 
 
+
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
