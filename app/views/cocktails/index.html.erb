@@ -1,14 +1,31 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_path("frozen.jpg")%>);">
+  <div class="container">
+    <h1>Des cocktails pour toutes vos envies !</h1>
+    <p>Change your life and learn to cocktail at one of our bar around the world.</p>
+      <%= link_to 'New Cocktail', new_cocktail_path, class: 'btn btn-primary' %>
+  </div>
+</div>
+
+
 <div class="container">
   <div class="row">
     <div class="col-sm">
       <h1>Cocktails</h1>
-      <%= link_to 'New Cocktail', new_cocktail_path, class: 'btn btn-primary' %>
-
-      <ul>
-        <% @cocktails.each do |cocktail| %>
-          <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+        <ul class="mt-3">
+          <% @cocktails.each do |cocktail| %>
+            <%= link_to cocktail_path(cocktail) do %>
+              <div class="card-product">
+                  <%= cl_image_tag cocktail.photo, alt: "Photo cocktail", height: 100, crop: :fill %>
+                  <div class="card-product-infos">
+                    <h2>  <%= cocktail.name%></h2>
+                    <p>Product description with <strong>relevant info</strong> only.</p>
+            </div>
+          </div>
+        <% end %>
         <% end %>
       </ul>
     </div>
   </div>
 </div>
+
+
